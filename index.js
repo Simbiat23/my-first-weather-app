@@ -1,10 +1,11 @@
 function changeWeatherInfo(response) {
   let temperatureElement = document.querySelector("#current-temp-value");
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#city-input");
-
   cityElement.innerHTML = response.data.city;
 
-  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  let tempDescription = document.querySelector("#weather-description");
+  tempDescription.innerHTML = response.data.condition.description;
 }
 
 function searchCity(city) {
@@ -23,4 +24,5 @@ function submitForm(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", submitForm);
-cityElement = response.data.city;
+
+searchCity("London");
