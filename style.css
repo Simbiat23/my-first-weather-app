@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #222;
   font-family: "Merriweather", serif;
 }
 
@@ -46,22 +46,26 @@ form {
 }
 
 .current-temp-value {
-  font-size: 60px;
+  font-size: 80px;
   position: relative;
   bottom: 130px;
-  left: 440px;
+  left: 380px;
 }
+
 .current-temp-unit {
-  font-size: 20px;
+  font-size: 28px;
   position: relative;
-  left: 430px;
+  left: 370px;
   bottom: 160px;
 }
 .current-temp-emoji {
-  font-size: 35px;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
   position: relative;
-  left: 440px;
-  bottom: 130px;
+  left: 400px;
+  bottom: 100px;
+  justify-content: flex;
 }
 h1 {
   margin: 0;

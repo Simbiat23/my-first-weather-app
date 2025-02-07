@@ -15,6 +15,11 @@ function changeWeatherInfo(response) {
   wind.innerHTML = `${response.data.wind.speed}km/h`;
 
   let currentDate = document.querySelector("#current-date");
+  currentDate.innerHTML = ``;
+
+  let icon = document.querySelector("#icon");
+  icon.innerHTML = `<img
+      src="${response.data.condition.icon_url}" class="current-temp-emoji"/>`;
 }
 
 function searchCity(city) {
@@ -34,4 +39,4 @@ function submitForm(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", submitForm);
 
-searchCity("London");
+searchCity("Lagos");
