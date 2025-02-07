@@ -45,17 +45,10 @@ form {
   margin-top: 60px;
 }
 
-.material-symbols-outlined {
-  font-size: 100px;
+.current-temp-value {
+  font-size: 60px;
   position: relative;
   bottom: 130px;
-  left: 450px;
-  margin-right: 5px;
-}
-.current-temp-value {
-  font-size: 80px;
-  position: relative;
-  bottom: 120px;
   left: 440px;
 }
 .current-temp-unit {
