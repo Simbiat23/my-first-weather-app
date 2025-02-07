@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #222;
   font-family: "Merriweather", serif;
 }
 
@@ -40,7 +40,7 @@ form {
 }
 
 .weather-container {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .material-symbols-outlined {
@@ -62,10 +62,24 @@ form {
   left: 430px;
   bottom: 160px;
 }
+.current-temp-emoji {
+  font-size: 35px;
+  position: relative;
+  left: 440px;
+  bottom: 130px;
+}
 h1 {
   margin: 0;
   font-size: 38px;
   line-height: 48px;
+}
+.current-details {
+  font-size: 14px;
+  line-height: 25px;
+  color: #444;
+}
+.current-details strong {
+  color: #222;
 }
 footer {
   padding: 30px 0 0 0;
