@@ -12,3 +12,65 @@ body {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   color: #ffff;
 }
+form {
+  margin: 20px 10px 20px 10px;
+}
+.search-container {
+  border-bottom: 1px;
+}
+
+.search-input {
+  width: 80%;
+  color: #555;
+  background: #ebfffc;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  margin: 10px 10px 10px 1px;
+}
+
+.search-btn {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #333;
+  margin-left: 5px;
+}
+
+.weather-container {
+  margin-top: 30px;
+}
+
+.material-symbols-outlined {
+  font-size: 100px;
+  position: relative;
+  bottom: 130px;
+  left: 450px;
+  margin-right: 5px;
+}
+.current-temp-value {
+  font-size: 80px;
+  position: relative;
+  bottom: 120px;
+  left: 440px;
+}
+.current-temp-unit {
+  font-size: 20px;
+  position: relative;
+  left: 430px;
+  bottom: 160px;
+}
+h1 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+footer {
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: #444;
+  font-weight: bold;
+}
