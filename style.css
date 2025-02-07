@@ -7,7 +7,7 @@ body {
   background: linear-gradient(135deg, #00feba, #5b548a);
   max-width: 600px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   color: #ffff;
@@ -37,6 +37,7 @@ form {
   cursor: pointer;
   color: #333;
   margin-left: 5px;
+  font-size: 16px;
 }
 
 .weather-container {
@@ -70,7 +71,7 @@ form {
 }
 h1 {
   margin: 0;
-  font-size: 38px;
+  font-size: 48px;
   line-height: 48px;
 }
 .current-details {
