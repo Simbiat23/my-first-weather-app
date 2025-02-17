@@ -94,8 +94,9 @@ h1 {
   margin-bottom: 10px;
 }
 .forecast-emoji {
-  text-align: center;
-  font-size: 38px;
+  width: 88px;
+  height: 88px;
+  display: block;
 }
 .forecast-temperatures {
   text-align: center;
