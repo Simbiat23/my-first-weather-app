@@ -21,6 +21,8 @@ function changeWeatherInfo(response) {
   let icon = document.querySelector("#icon");
   icon.innerHTML = `<img
       src="${response.data.condition.icon_url}" class="current-temp-emoji"/>`;
+
+  showForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -50,15 +52,22 @@ function searchCity(city) {
   axios.get(apiUrl).then(changeWeatherInfo);
 }
 
-// fuction to change city using user input
+// function to change city using user input
 function submitForm(event) {
   event.preventDefault();
   let searchFormInput = document.querySelector("#search-input");
 
   searchCity(searchFormInput.value);
 }
-// function to show forcast
-function showForecast() {
+// creating Api key to get forecast
+function getForecast(city) {
+  let apiKey = "t07aaefccae3394of62526e7dc0c0bad";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(showForecast);
+}
+
+// function to show forecast
+function showForecast(response) {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -83,4 +92,3 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", submitForm);
 
 searchCity("Lagos");
-showForecast();
