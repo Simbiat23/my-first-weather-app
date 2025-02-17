@@ -81,6 +81,33 @@ h1 {
 .current-details strong {
   color: #222;
 }
+/* forcast container */
+.weather-forecast-container {
+  display: flex;
+  justify-content: space-around;
+}
+.forecast-date {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.forecast-emoji {
+  text-align: center;
+  font-size: 38px;
+}
+.forecast-temperatures {
+  text-align: center;
+  color: #222;
+  font-size: 14px;
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}
+.forecast-temperature {
+  padding: 0 10px;
+}
 footer {
   padding: 30px 0 0 0;
   text-align: center;
