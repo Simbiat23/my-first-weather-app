@@ -1,6 +1,10 @@
 body {
-  background-color: #222;
-  font-family: "Merriweather", serif;
+  background: url("images/AdobeStock_624561388.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", serif;
+  backdrop-filter: blur(8px);
+  position: relative;
 }
 
 .container {
@@ -11,7 +15,6 @@ body {
   border-radius: 15px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   color: #ffff;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 form {
   margin: 20px 10px 20px 10px;
@@ -42,8 +45,8 @@ form {
 }
 
 .weather-container {
-  margin: 20px auto;
   margin-top: 60px;
+  margin-bottom: 0;
 }
 
 .current-temp-value {
@@ -85,7 +88,14 @@ h1 {
 .weather-forecast-container {
   display: flex;
   justify-content: space-around;
+  gap: 15px;
 }
+.forecast-day {
+  background: rgba(65, 50, 100, 0.08);
+  border-radius: 12px;
+  padding: 10px;
+}
+
 .forecast-date {
   text-align: center;
   color: #555;
