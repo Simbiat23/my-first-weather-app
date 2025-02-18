@@ -43,10 +43,9 @@ form {
   margin-left: 5px;
   font-size: 16px;
 }
-
-.weather-container {
-  margin-top: 60px;
-  margin-bottom: 0;
+main {
+  padding-bottom: 0;
+  margin-top: 0px;
 }
 
 .current-temp-value {
@@ -60,7 +59,7 @@ form {
   font-size: 28px;
   position: relative;
   left: 370px;
-  bottom: 160px;
+  bottom: 170px;
 }
 .current-temp-emoji {
   font-size: 60px;
@@ -68,7 +67,7 @@ form {
   height: 100px;
   position: relative;
   left: 400px;
-  bottom: 100px;
+  bottom: 105px;
   justify-content: flex;
 }
 h1 {
@@ -85,6 +84,7 @@ h1 {
   color: #222;
 }
 /* forcast container */
+
 .weather-forecast-container {
   display: flex;
   justify-content: space-around;
@@ -94,6 +94,7 @@ h1 {
   background: rgba(65, 50, 100, 0.08);
   border-radius: 12px;
   padding: 10px;
+  box-shadow: #222;
 }
 
 .forecast-date {
