@@ -47,6 +47,9 @@ main {
   padding-bottom: 0;
   margin-top: 0px;
 }
+.current-temp {
+  margin-bottom: -80px;
+}
 
 .current-temp-value {
   font-size: 80px;
